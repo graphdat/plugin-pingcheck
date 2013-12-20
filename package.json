@@ -1,0 +1,27 @@
+{
+	"name": "graphdat-pingcheck-plugin",
+	"version": "0.0.1",
+	"private": false,
+	"description": "Ping Check plugin for Graphat pings a host and reports back on it's response time",
+	"main": "index.js",
+	"devDependencies": {},
+	"dependencies": {
+		"async": "0.2.x",
+		"graphdat-plugin-tools" : "0.0.1"
+	},
+	"repository": {
+	"type": "git",
+	"url": "https://github.com/graphdat/plugin-pingcheck"
+	},
+	"keywords": [
+		"graphdat",
+		"plugin",
+		"ping"
+	],
+	"author": "Graphdat <support@graphdat.com>",
+	"license": "Apache v2",
+	"bugs": {
+		"url": "https://github.com/graphdat/plugin-pingcheck/issues"
+	},
+	"engine": "node >= 0.8.1"
+}

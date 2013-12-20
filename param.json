@@ -1,0 +1,10 @@
+{
+   "items": [
+      {
+         "source": "google1",
+         "pollInterval": "5",
+         "host": "www.google.com"
+      }
+   ],
+   "pollInterval": 1000
+}
