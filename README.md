@@ -1,21 +1,25 @@
 Boundary Ping Check Plugin
 --------------------------
 
-Pings a set of hosts and reports on the response time. The plugin allows multiple hosts to be ping'd and each of those hosts to set their own Poll interval.
+Pings a set of hosts and reports on the response time. The plugin allows multiple hosts to be ping'd and each of those hosts to set their own Poll interval. Currently does not suupport SmartOS. 
 
-### Platforms
-- Windows
-- Linux
-- OS X
+### Prerequisites
 
-#### Prerequisites
-- node version 0.8.0 or later
-- npm version 1.4.21 or later
+|     OS    | Linux | Windows | SmartOS | OS X |
+|:----------|:-----:|:-------:|:-------:|:----:|
+| Supported |   v   |    v    |    -    |  v   |
+
+
+|  Runtime | node.js | Python | Java |
+|:---------|:-------:|:------:|:----:|
+| Required |    +    |        |      |
+
+- [How to install node.js?](https://help.boundary.com/hc/articles/202360701)
 
 ### Plugin Setup
 None
 
-### Plugin Configuration Fields
+#### Plugin Configuration Fields
 
 |Field Name     |Description                                                                       |
 |:--------------|:---------------------------------------------------------------------------------|
@@ -28,6 +32,3 @@ None
 |Metric Name       |Description                            |
 |:-----------------|:--------------------------------------|
 |Ping Response Time|The response time from the ping command|
-
-
-
