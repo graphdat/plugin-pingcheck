@@ -1,7 +1,8 @@
 Boundary Ping Check Plugin
 --------------------------
 
-Pings a set of hosts and reports on the response time. The plugin allows multiple hosts to be ping'd and each of those hosts to set their own Poll interval. Currently does not suupport SmartOS. 
+Pings a set of hosts and reports on the response time. The plugin allows multiple hosts to be ping'd and each of those hosts to set their own Poll interval. See video [walkthrough](https://help.boundary.com/hc/articles/201383932).
+Note: Currently does not support SmartOS.
 
 ### Prerequisites
 
