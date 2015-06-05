@@ -11,9 +11,6 @@ local isEmpty = framework.string.isEmpty
 local clone = framework.table.clone
 
 local params = framework.params 
-params.name = 'Boundary Pingcheck plugin'
-params.version = '1.1'
-params.tags = "ping"
 
 local commands = {
   linux = { path = '/bin/ping', args = {'-n', '-w 2', '-c 1'} },

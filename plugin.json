@@ -1,36 +1,39 @@
 {
-    "description" : "Pings a set of hosts and reports back their response time",
-    "icon" : "icon.png",
+  "name": "Boundary Pingcheck plugin",
+  "version": "1.1",
+  "tags": "ping",
+  "description" : "Pings a set of hosts and reports back their response time",
+  "icon" : "icon.png",
  	"command" : "node index.js",
 	"command_lua" : "boundary-meter init.lua",
 	"postExtract" : "npm install",
 	"postExtract_lua" : "",    
 
-    "metrics" : [ "PING_RESPONSETIME" ],
+  "metrics" : [ "PING_RESPONSETIME" ],
 
-    "paramArray" : { "itemTitle" : ["source"], "schemaTitle" : "Host"},
-    "paramSchema" : [
-        {
-            "title" : "Source",
-            "name" : "source",
-            "description" : "The source to display in the legend for the host. Ex. google",
-            "type" : "string",
-            "required" : true
-        },
-        {
-            "title": "Host",
-            "name": "host",
-            "description": "The Hostname or IP Address to ping.  For example, www.google.com or 173.194.33.112",
-            "type": "string",
-            "required": true
-        },
-        {
-            "title" : "Poll Time (sec)",
-            "name" : "pollInterval",
-            "description" : "The Poll Interval to send a ping to the host in seconds. Ex. 5",
-            "type" : "string",
-            "default" : 5,
-            "required" : true
-        }
-    ]
+  "paramArray" : { "itemTitle" : ["source"], "schemaTitle" : "Host"},
+  "paramSchema" : [
+    {
+      "title" : "Source",
+      "name" : "source",
+      "description" : "The source to display in the legend for the host. Ex. google",
+      "type" : "string",
+      "required" : true
+    },
+    {
+      "title": "Host",
+      "name": "host",
+      "description": "The Hostname or IP Address to ping.  For example, www.google.com or 173.194.33.112",
+      "type": "string",
+      "required": true
+    },
+    {
+      "title" : "Poll Time (sec)",
+      "name" : "pollInterval",
+      "description" : "The Poll Interval to send a ping to the host in seconds. Ex. 5",
+      "type" : "string",
+      "default" : 5,
+      "required" : true
+    }
+  ]
 }
